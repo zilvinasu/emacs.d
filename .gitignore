@@ -1,0 +1,15 @@
+url/
+elpa/
+eshell/
+games/
+semanticdb/
+ac-comphist.dat
+.emacs.desktop
+.org-id-locations
+.saves
+nrepl-history
+projectile-bookmarks.eld
+projectile.cache
+network-security.data
+recentf
+*.elc
