@@ -7,6 +7,9 @@
 
 (package-initialize)
 
+(setq custom-file "~/.emacs.d/emacs-custom.el")
+(load custom-file)
+
 (require 'setup-core)
 (require 'setup-editor)
 (require 'setup-kbds)
