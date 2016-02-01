@@ -30,6 +30,7 @@
 (require 'setup-js)
 (require 'setup-go)
 (require 'setup-clojure)
+(require 'setup-python)
 (require 'setup-smartparens)
 (require 'setup-helm)
 
