@@ -22,6 +22,7 @@
   (require 'setup-osx))
 
 ;; Setup modes
+(require 'setup-org)
 (require 'setup-helm)
 
 ;; Setup bindings
