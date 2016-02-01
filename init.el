@@ -26,6 +26,7 @@
 (require 'setup-yaml)
 (require 'setup-restclient)
 (require 'setup-web)
+(require 'setup-js)
 (require 'setup-smartparens)
 (require 'setup-helm)
 
