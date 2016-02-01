@@ -3,6 +3,7 @@
 (setq apropos-sort-by-scores t)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
+(defalias 'list-buffers 'ibuffer)
 
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
