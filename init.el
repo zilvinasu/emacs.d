@@ -15,9 +15,14 @@
   (package-refresh-contents))
 (package-install-selected-packages)
 
-;; Setup stuff
+;; Setup base
 (require 'setup-core)
 (require 'setup-editor)
-(require 'setup-kbds)
 (when (equal system-type 'darwin)
   (require 'setup-osx))
+
+;; Setup modes
+(require 'setup-helm)
+
+;; Setup bindings
+(require 'setup-kbds)
