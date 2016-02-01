@@ -24,6 +24,7 @@
 ;; Setup modes
 (require 'setup-org)
 (require 'setup-yaml)
+(require 'setup-docker)
 (require 'setup-restclient)
 (require 'setup-web)
 (require 'setup-js)
