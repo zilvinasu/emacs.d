@@ -32,6 +32,7 @@
 (require 'setup-clojure)
 (require 'setup-python)
 (require 'setup-ruby)
+(require 'setup-haskell)
 (require 'setup-smartparens)
 (require 'setup-helm)
 
