@@ -8,3 +8,5 @@
 (package-initialize)
 
 (require 'setup-core)
+(when (equal system-type 'darwin)
+  (require 'setup-osx))
