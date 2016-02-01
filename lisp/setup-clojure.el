@@ -16,6 +16,30 @@
           (lambda ()
             (eldoc-mode)))
 
+(defhydra hydra-cider-repl
+  (:hint nil :exit t)
+  "
+REPL: _f_igwheel _k_ill"
+  ("f" (lambda ()
+         (interactive)
+         (save-some-buffers)
+         (with-current-buffer (cider-current-repl-buffer)
+           (goto-char (point-max))
+           (insert "(require 'figwheel-sidecar.repl-api)
+             (figwheel-sidecar.repl-api/cljs-repl)")
+           (cider-repl-return))))
+  ("k" cider-quit)
+  ("q" nil nil))
+
+(defhydra hydra-clojure
+  (:hint nil :exit t)
+  "
+REPL: _c_onnect _j_ack-in"
+  ("c" cider-connect)
+  ("j" cider-jack-in)
+  ("q" nil nil))
+
+
 (define-key cider-repl-mode-map (kbd "C-c m m") 'hydra-cider-repl/body)
 (define-key clojure-mode-map (kbd "C-c m m") 'hydra-clojure/body)
 
