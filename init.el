@@ -27,6 +27,7 @@
 (require 'setup-restclient)
 (require 'setup-web)
 (require 'setup-js)
+(require 'setup-go)
 (require 'setup-smartparens)
 (require 'setup-helm)
 
