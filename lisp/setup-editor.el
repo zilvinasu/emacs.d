@@ -1,3 +1,8 @@
+;;; setup-editor.el  ---  Editor config
+;;; Commentary:
+;;; Editor configurations and related modes
+;;; Code:
+
 ;; Theming
 (load-theme 'leuven t)
 
@@ -18,3 +23,4 @@
 (setq-default tab-width 4)
 
 (provide 'setup-editor)
+;;; setup-editor.el ends here

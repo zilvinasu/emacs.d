@@ -1,3 +1,7 @@
+;;; setup-osx.el  --- OSX cfg
+;;; Commentary:
+;;; OSX specific configs
+;;; Code:
 (set-frame-font "Input Mono Narrow-12")
 
 ;; Rebind modifier keys
@@ -14,3 +18,4 @@
    (exec-path-from-shell-copy-envs '("WORKON_HOME" "GOPATH"))))
 
 (provide 'setup-osx)
+;;; setup-osx.el ends here

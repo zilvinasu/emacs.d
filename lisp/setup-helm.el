@@ -1,3 +1,7 @@
+;;; setup-helm.el  ---  Helm
+;;; Commentary:
+;;; helm, helm-projectile and related mode configurations
+;;; Code:
 (require 'helm)
 (require 'helm-config)
 
@@ -22,3 +26,4 @@
 (helm-projectile-on)
 
 (provide 'setup-helm)
+;;; setup-helm.el ends here

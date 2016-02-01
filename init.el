@@ -1,3 +1,8 @@
+;;; init.el  --- Emacs init file
+;;; Commentary:
+;;; All the editor related configs are placed or and required here
+;;; Code:
+
 ;; Packages
 (setq package-archives
       '(("gnu" . "http://elpa.gnu.org/packages/")
@@ -34,8 +39,8 @@
 (require 'setup-python)
 (require 'setup-ruby)
 (require 'setup-haskell)
+
 (require 'setup-smartparens)
 (require 'setup-helm)
-
-;; Setup bindings
 (require 'setup-kbds)
+;;; init.el ends here
