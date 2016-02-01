@@ -1,3 +1,4 @@
+;; Packages
 (setq package-archives
       '(("gnu" . "http://elpa.gnu.org/packages/")
 	("marmalade" . "http://marmalade-repo.org/packages/")
@@ -10,6 +11,11 @@
 (setq custom-file "~/.emacs.d/emacs-custom.el")
 (load custom-file)
 
+(when (not package-archive-contents)
+  (package-refresh-contents))
+(package-install-selected-packages)
+
+;; Setup stuff
 (require 'setup-core)
 (require 'setup-editor)
 (require 'setup-kbds)
