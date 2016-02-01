@@ -31,6 +31,7 @@
 (require 'setup-go)
 (require 'setup-clojure)
 (require 'setup-python)
+(require 'setup-ruby)
 (require 'setup-smartparens)
 (require 'setup-helm)
 
