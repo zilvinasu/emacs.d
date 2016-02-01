@@ -9,7 +9,7 @@
  '(fringe-mode (quote (1 . 1)) nil (fringe))
  '(package-selected-packages
    (quote
-    (smartparens restclient avy magit helm-projectile projectile expand-region helm smart-mode-line))))
+    (web-mode smartparens restclient avy magit helm-projectile projectile expand-region helm smart-mode-line))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

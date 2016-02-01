@@ -25,6 +25,7 @@
 (require 'setup-org)
 (require 'setup-yaml)
 (require 'setup-restclient)
+(require 'setup-web)
 (require 'setup-smartparens)
 (require 'setup-helm)
 
