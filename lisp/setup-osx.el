@@ -6,8 +6,11 @@
 (setq ns-function-modifier 'hyper)
 
 ;; Fixup PATH
-(setq exec-path-from-shell-check-startup-files nil)
-(exec-path-from-shell-initialize)
-(exec-path-from-shell-copy-envs '("WORKON_HOME" "GOPATH"))
+(add-hook
+ 'after-init-hook
+ (lambda ()
+   (setq exec-path-from-shell-check-startup-files nil)
+   (exec-path-from-shell-initialize)
+   (exec-path-from-shell-copy-envs '("WORKON_HOME" "GOPATH"))))
 
 (provide 'setup-osx)
