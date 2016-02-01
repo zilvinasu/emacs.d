@@ -22,6 +22,7 @@
   (require 'setup-osx))
 
 ;; Setup modes
+(require 'setup-misc)
 (require 'setup-org)
 (require 'setup-yaml)
 (require 'setup-docker)
