@@ -13,4 +13,4 @@
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 
 (provide 'setup-org)
-;;; my-org.el ends here
+;;; setup-org.el ends here

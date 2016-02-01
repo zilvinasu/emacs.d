@@ -23,6 +23,7 @@
 
 ;; Setup modes
 (require 'setup-org)
+(require 'setup-yaml)
 (require 'setup-helm)
 
 ;; Setup bindings
