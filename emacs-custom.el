@@ -7,7 +7,9 @@
    (quote
     ("3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default)))
  '(fringe-mode (quote (1 . 1)) nil (fringe))
- '(package-selected-packages (quote (expand-region helm smart-mode-line))))
+ '(package-selected-packages
+   (quote
+    (helm-projectile projectile expand-region helm smart-mode-line))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
