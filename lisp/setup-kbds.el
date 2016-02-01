@@ -5,6 +5,7 @@
 (global-set-key (kbd "C-c g s") 'magit-status)
 (global-set-key (kbd "C-c l p") 'package-list-packages)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "C-;") #'comment-line)
 (global-set-key (kbd "C-x b") 'helm-mini)
 (global-set-key (kbd "C-'") 'avy-goto-char-timer)
 (global-set-key (kbd "C-=") 'er/expand-region)
