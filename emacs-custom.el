@@ -6,6 +6,7 @@
  '(custom-safe-themes
    (quote
     ("3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default)))
+ '(fringe-mode (quote (1 . 1)) nil (fringe))
  '(package-selected-packages (quote (smart-mode-line))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
