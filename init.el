@@ -24,6 +24,7 @@
 ;; Setup modes
 (require 'setup-org)
 (require 'setup-yaml)
+(require 'setup-restclient)
 (require 'setup-helm)
 
 ;; Setup bindings
