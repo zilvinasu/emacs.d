@@ -3,6 +3,8 @@
 	("marmalade" . "http://marmalade-repo.org/packages/")
 	("melpa" . "http://melpa.milkbox.net/packages/")))
 
-(add-to-list 'load-path "~/.emacs.d/core/")
+(add-to-list 'load-path  "~/.emnacs.d/lisp/")
 
-(require 'setup-core)				   
+(package-initialize)
+
+(require 'setup-core)
