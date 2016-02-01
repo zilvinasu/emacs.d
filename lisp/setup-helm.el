@@ -17,4 +17,8 @@
 (helm-mode 1)
 (helm-autoresize-mode t)
 
+(projectile-global-mode)
+(setq projectile-completion-system 'helm)
+(helm-projectile-on)
+
 (provide 'setup-helm)
