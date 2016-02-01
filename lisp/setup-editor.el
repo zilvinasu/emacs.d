@@ -6,4 +6,8 @@
       kept-old-versions 2
       version-control t)
 
+;; Tabs
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+
 (provide 'setup-editor)
