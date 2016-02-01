@@ -10,5 +10,7 @@
 (global-set-key (kbd "C--") 'er/contract-region)
 (global-set-key (kbd "M-i") 'imenu)
 (global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "M-y") 'helm-show-kill-ring)
+
  
 (provide 'setup-kbds)
