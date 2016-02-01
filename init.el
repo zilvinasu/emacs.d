@@ -8,6 +8,7 @@
 (package-initialize)
 
 (require 'setup-core)
+(require 'setup-editor)
 (require 'setup-kbds)
 (when (equal system-type 'darwin)
   (require 'setup-osx))
