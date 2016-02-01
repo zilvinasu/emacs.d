@@ -1,6 +1,10 @@
 ;; Theming
 (load-theme 'leuven t)
 
+(setq rm-blacklist "*")
+(setq rm-whitelist (mapconcat 'identity '("FlyC") "\\|"))
+(sml/setup)
+
 ;; Backups
 (setq backup-directory-alist `(("." . "~/.emacs.d/.saves")))
 (setq backup-by-copying t)
