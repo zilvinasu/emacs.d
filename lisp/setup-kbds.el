@@ -1,6 +1,8 @@
 (windmove-default-keybindings)
 (global-unset-key (kbd "C-x c"))
 (global-set-key (kbd "C-c h") 'helm-command-prefix)
+(global-set-key (kbd "C-c g l") 'magit-log-head)
+(global-set-key (kbd "C-c g s") 'magit-status)
 (global-set-key (kbd "C-c l p") 'package-list-packages)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "C-x b") 'helm-mini)
