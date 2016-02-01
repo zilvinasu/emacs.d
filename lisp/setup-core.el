@@ -1,8 +1,10 @@
-(defalias 'yes-or-no-p 'y-or-n-p)
+(setq gc-cons-threshold 100000000)
 (setq inhibit-splash-screen t)
+(setq apropos-sort-by-scores t)
+
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
-
-(setq apropos-sort-by-scores t)
 
 (provide 'setup-core)
