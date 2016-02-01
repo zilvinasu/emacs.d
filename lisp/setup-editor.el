@@ -1,3 +1,6 @@
+;; Theming
+(load-theme 'leuven t)
+
 ;; Backups
 (setq backup-directory-alist `(("." . "~/.emacs.d/.saves")))
 (setq backup-by-copying t)
