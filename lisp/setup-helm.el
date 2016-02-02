@@ -13,6 +13,7 @@
   (setq helm-google-suggest-use-curl-p t))
 
 (when (equal system-type 'darwin)
+  (setq helm-locate-fuzzy-match nil)
   (setq helm-locate-command "mdfind -name %s %s"))
 
 (setq helm-split-window-in-side-p           t
