@@ -12,6 +12,9 @@
 (when (executable-find "curl")
   (setq helm-google-suggest-use-curl-p t))
 
+(when (equal system-type 'darwin)
+  (setq helm-locate-command "mdfind -name %s %s"))
+
 (setq helm-split-window-in-side-p           t
       helm-move-to-line-cycle-in-source     t
       helm-ff-search-library-in-sexp        t
