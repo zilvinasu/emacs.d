@@ -10,7 +10,7 @@
 (global-set-key (kbd "C-'") 'avy-goto-char-timer)
 (global-set-key (kbd "C-=") 'er/expand-region)
 (global-set-key (kbd "C--") 'er/contract-region)
-(global-set-key (kbd "M-i") 'imenu)
+(global-set-key (kbd "M-i") 'helm-swoop)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "M-g f") 'avy-goto-line)
