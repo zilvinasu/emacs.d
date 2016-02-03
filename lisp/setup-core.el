@@ -5,6 +5,7 @@
 (setq gc-cons-threshold 100000000)
 (setq inhibit-splash-screen t)
 (setq apropos-sort-by-scores t)
+(setq initial-scratch-message "")
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defalias 'list-buffers 'ibuffer)
