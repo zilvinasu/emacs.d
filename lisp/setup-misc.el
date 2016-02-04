@@ -2,9 +2,9 @@
 ;;; Commentary:
 ;;; Configs for modes which require little configuration
 ;;; Code:
-(add-hook 'after-init-hook 'global-company-mode)
-(add-hook 'after-init-hook 'yas-global-mode)
-(add-hook 'after-init-hook 'global-flycheck-mode)
+(global-company-mode)
+(yas-global-mode)
+(global-flycheck-mode)
 
 (provide 'setup-misc)
 ;;; setup-misc.el ends here
