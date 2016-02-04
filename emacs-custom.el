@@ -14,7 +14,7 @@
  '(haskell-tags-on-save t)
  '(package-selected-packages
    (quote
-    (yaml-mode helm-swoop go-eldoc flycheck company-ghc haskell-mode exec-path-from-shell helm-ag elpy hydra cider clojure-mode dockerfile-mode company-go go-mode company-tern company web-mode smartparens restclient avy magit helm-projectile projectile expand-region helm smart-mode-line))))
+    (use-package yaml-mode helm-swoop go-eldoc flycheck company-ghc haskell-mode exec-path-from-shell helm-ag elpy hydra cider clojure-mode dockerfile-mode company-go go-mode company-tern company web-mode smartparens restclient avy magit helm-projectile projectile expand-region helm smart-mode-line))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
