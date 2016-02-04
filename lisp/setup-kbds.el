@@ -1,3 +1,7 @@
+;;; setup-kbds.el  --- KBDS
+;;; Commentary:
+;;; Globla bindings and rempapings
+;;; Code:
 (windmove-default-keybindings)
 (global-set-key [remap find-file] 'helm-find-files)
 (global-set-key [remap execute-extended-command] 'helm-M-x)
@@ -20,3 +24,4 @@
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
  
 (provide 'setup-kbds)
+;;; setup-kbds.el ends here
