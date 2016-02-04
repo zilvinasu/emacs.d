@@ -5,6 +5,7 @@
 (windmove-default-keybindings)
 (global-set-key [remap find-file] 'helm-find-files)
 (global-set-key [remap execute-extended-command] 'helm-M-x)
+(global-set-key [remap dabbrev-expand] 'hippie-expand)
 (global-unset-key (kbd "C-x c"))
 (global-set-key (kbd "C-c h") 'helm-command-prefix)
 (global-set-key (kbd "C-c g l") 'magit-log-head)
