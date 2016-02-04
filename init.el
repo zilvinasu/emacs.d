@@ -20,27 +20,29 @@
   (package-refresh-contents))
 (package-install-selected-packages)
 
+(require 'use-package)
+
 ;; Setup base
-(require 'setup-core)
-(require 'setup-editor)
-(when (equal system-type 'darwin)
-  (require 'setup-osx))
+(use-package setup-core)
+(use-package setup-editor)
+(use-package setup-osx
+  :if (equal system-type 'darwin))
 
 ;; Setup modes
-(require 'setup-misc)
-(require 'setup-org)
-(require 'setup-yaml)
-(require 'setup-docker)
-(require 'setup-restclient)
-(require 'setup-web)
-(require 'setup-js)
-(require 'setup-go)
-(require 'setup-clojure)
-(require 'setup-python)
-(require 'setup-ruby)
-(require 'setup-haskell)
+(use-package setup-misc)
+(use-package setup-org)
+(use-package setup-yaml)
+(use-package setup-docker)
+(use-package setup-restclient)
+(use-package setup-web)
+(use-package setup-js)
+(use-package setup-go)
+(use-package setup-clojure)
+(use-package setup-python)
+(use-package setup-ruby)
+(use-package setup-haskell)
 
-(require 'setup-smartparens)
-(require 'setup-helm)
-(require 'setup-kbds)
+(use-package setup-smartparens)
+(use-package setup-helm)
+(use-package setup-kbds)
 ;;; init.el ends here
