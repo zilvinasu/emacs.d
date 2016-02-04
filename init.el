@@ -20,7 +20,8 @@
   (package-refresh-contents))
 (package-install-selected-packages)
 
-(require 'use-package)
+(eval-when-compile
+  (require 'use-package))
 
 ;; Setup base
 (use-package setup-core)
