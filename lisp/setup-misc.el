@@ -3,6 +3,7 @@
 ;;; Configs for modes which require little configuration
 ;;; Code:
 (add-hook 'prog-mode-hook 'flycheck-mode)
+(winner-mode 1)
 (global-company-mode)
 (yas-global-mode)
 
