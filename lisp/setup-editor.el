@@ -7,7 +7,7 @@
 (load-theme 'leuven t)
 
 (setq rm-blacklist "*")
-(setq rm-whitelist (mapconcat 'identity '("FlyC") "\\|"))
+(setq rm-whitelist (mapconcat 'identity '("FlyC" "Fly") "\\|"))
 (sml/setup)
 
 ;; Backups
