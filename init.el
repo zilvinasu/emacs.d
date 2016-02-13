@@ -45,5 +45,6 @@
 
 (use-package setup-smartparens)
 (use-package setup-helm)
+(use-package setup-evil)
 (use-package setup-kbds)
 ;;; init.el ends here
