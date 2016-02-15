@@ -6,6 +6,7 @@
 (setq inhibit-splash-screen t)
 (setq apropos-sort-by-scores t)
 (setq initial-scratch-message "")
+(setq ring-bell-function 'ignore)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defalias 'list-buffers 'ibuffer)
