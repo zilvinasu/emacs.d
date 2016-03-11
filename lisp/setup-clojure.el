@@ -9,6 +9,7 @@
   (setq nrepl-buffer-name-separator "-")
   (setq nrepl-buffer-name-show-port t)
   (setq cider-repl-history-file "~/.emacs.d/nrepl-history")
+  (setq cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))")
   (add-to-list 'auto-mode-alist '("\.cljs$" . clojure-mode))
   (add-to-list 'auto-mode-alist '("\.edn$" . clojure-mode))
   (add-to-list 'auto-mode-alist '("gantryfile" . clojure-mode))
@@ -21,24 +22,17 @@
   (defhydra hydra-cider-repl
     (:hint nil :exit t)
     "
-REPL: _f_igwheel _k_ill"
-    ("f" (lambda ()
-           (interactive)
-           (save-some-buffers)
-           (with-current-buffer (cider-current-repl-buffer)
-             (goto-char (point-max))
-             (insert "(require 'figwheel-sidecar.repl-api)
-             (figwheel-sidecar.repl-api/cljs-repl)")
-             (cider-repl-return))))
+REPL: _k_ill"
     ("k" cider-quit)
     ("q" nil nil))
 
   (defhydra hydra-clojure
     (:hint nil :exit t)
     "
-REPL: _c_onnect _j_ack-in"
+REPL: _c_onnect _j_ack-in clj _J_ack-in cljs"
     ("c" cider-connect)
     ("j" cider-jack-in)
+    ("J" cider-jack-in-clojurescript)
     ("q" nil nil))
 
 
