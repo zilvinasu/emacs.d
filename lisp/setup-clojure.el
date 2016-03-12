@@ -29,7 +29,7 @@ REPL: _k_ill"
   (defhydra hydra-clojure
     (:hint nil :exit t)
     "
-REPL: _c_onnect _j_ack-in clj _J_ack-in cljs"
+REPL: _c_onnect | _j_ack-in clj | _J_ack-in cljs"
     ("c" cider-connect)
     ("j" cider-jack-in)
     ("J" cider-jack-in-clojurescript)
