@@ -2,7 +2,6 @@
 ;;; Commentary:
 ;;; Replace default values used in barebone Emacs
 ;;; Code:
-(setq gc-cons-threshold 500000000)
 (setq inhibit-splash-screen t)
 (setq apropos-sort-by-scores t)
 (setq initial-scratch-message "")
