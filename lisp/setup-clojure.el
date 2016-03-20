@@ -11,6 +11,7 @@
   (setq cider-repl-history-file "~/.emacs.d/nrepl-history")
   (setq cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))")
   (add-to-list 'auto-mode-alist '("\.cljs$" . clojurescript-mode))
+  (add-to-list 'auto-mode-alist '("\\.boot\\'" . clojure-mode))
   (add-to-list 'auto-mode-alist '("\.edn$" . clojure-mode))
   (add-to-list 'auto-mode-alist '("gantryfile" . clojure-mode))
   :config
