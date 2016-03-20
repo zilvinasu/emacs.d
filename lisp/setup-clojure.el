@@ -9,6 +9,8 @@
   (setq nrepl-buffer-name-separator "-")
   (setq nrepl-buffer-name-show-port t)
   (setq cider-repl-history-file "~/.emacs.d/nrepl-history")
+  (setq cider-boot-command "/usr/local/bin/boot")
+  (setq cider-boot-parameters "dev")
   (setq cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))")
   (add-to-list 'auto-mode-alist '("\.cljs$" . clojurescript-mode))
   (add-to-list 'auto-mode-alist '("\\.boot\\'" . clojure-mode))
