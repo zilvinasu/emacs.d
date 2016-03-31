@@ -2,7 +2,11 @@
 ;;; Commentary:
 ;;; OSX specific configs
 ;;; Code:
-(set-frame-font "Input Mono Narrow-12")
+(defvar-local osx-frame-font "Input Mono Narrow")
+(defvar-local osx-frame-font-size 12)
+
+(when (find-font (font-spec :name osx-frame-font))
+  (set-frame-font (format "%s-%d" osx-frame-font osx-frame-font-size)))
 
 ;; Rebind modifier keys
 (setq mac-option-modifier 'super)
