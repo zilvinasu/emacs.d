@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; OSX specific configs
 ;;; Code:
-(set-frame-font "Menlo-12")
+(set-frame-font "Input Mono Narrow-12")
 
 ;; Rebind modifier keys
 (setq mac-option-modifier 'super)
