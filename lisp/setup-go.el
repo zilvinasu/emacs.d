@@ -5,7 +5,8 @@
 (use-package go-mode
   :init
   (add-hook 'before-save-hook 'gofmt-before-save)
-  :bind ("M-." . godef-jump)
+  :bind (:map go-mode-map
+         ("M-." . godef-jump))
   :config
   (go-eldoc-setup)
   (add-to-list 'company-backends 'company-go))
