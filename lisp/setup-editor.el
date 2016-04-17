@@ -8,6 +8,7 @@
 
 (setq rm-blacklist "*")
 (setq rm-whitelist (mapconcat 'identity '("FlyC" "Fly") "\\|"))
+(setq sml/no-confirm-load-theme t)
 (sml/setup)
 
 ;; Backups
