@@ -6,6 +6,7 @@
   :init
   (add-hook 'smartparens-enabled-hook #'evil-smartparens-mode)
   :config
+  (global-evil-leader-mode 1)
   (global-evil-surround-mode 1)
   (global-evil-matchit-mode 1)
   (evil-mode 1)
@@ -22,6 +23,14 @@
   (evil-set-initial-state 'text-mode 'insert)
   (evil-set-initial-state 'git-commit-mode 'insert)
   (evil-set-initial-state 'shell-mode 'insert)
+
+  (evil-leader/set-leader "<SPC>")
+  
+  (evil-leader/set-key
+   "b" 'helm-mini
+   "e" 'find-file
+   "j" 'avy-goto-char-timer
+   "p" 'projectile-switch-project)
   
   ;; \ is bound to evil-execute-in-emacs-state
   (bind-key (kbd "gd") (kbd "\\ M-.") evil-normal-state-map)
