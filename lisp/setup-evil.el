@@ -30,6 +30,7 @@
    "b" 'helm-mini
    "e" 'find-file
    "j" 'avy-goto-char-timer
+   "o" 'projectile-find-file
    "p" 'projectile-switch-project)
   
   ;; \ is bound to evil-execute-in-emacs-state
