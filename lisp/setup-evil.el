@@ -32,6 +32,7 @@
    "j" 'avy-goto-char-timer
    "ps" 'helm-projectile-ag
    "pf" 'projectile-find-file
+   "pk" 'projectile-kill-buffers
    "pp" 'projectile-switch-project)
   
   ;; \ is bound to evil-execute-in-emacs-state
