@@ -9,5 +9,12 @@
             (setq-local indent-line-function 'js-jsx-indent-line)))
 (add-to-list 'auto-mode-alist '("\\.jsx$" . js-mode))
 
+(add-hook 'typescript-mode-hook
+          (lambda ()
+            (tide-setup)
+            (setq-local flycheck-check-syntax-automatically '(save mode-enabled))
+            (eldoc-mode)
+            (company-mode-on)))
+
 (provide 'setup-js)
 ;;; setup-js ends here
