@@ -25,10 +25,13 @@
   (evil-set-initial-state 'shell-mode 'insert)
 
   (evil-leader/set-leader "<SPC>")
-  
+
   (evil-leader/set-key
    "b" 'helm-mini
    "e" 'find-file
+   "gs" 'magit-status
+   "gl" 'magit-log-head
+   "gd" 'magit-diff
    "j" 'avy-goto-char-timer
    "ps" 'helm-projectile-ag
    "pf" 'projectile-find-file
