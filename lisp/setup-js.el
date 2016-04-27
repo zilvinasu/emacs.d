@@ -6,6 +6,7 @@
           (lambda ()
             (tern-mode t)
             (add-to-list 'company-backends 'company-tern)
+            (setq-local js-indent-level 2)
             (setq-local indent-line-function 'js-jsx-indent-line)))
 (add-to-list 'auto-mode-alist '("\\.jsx$" . js-mode))
 
