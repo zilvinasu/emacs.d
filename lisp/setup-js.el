@@ -14,6 +14,7 @@
           (lambda ()
             (tide-setup)
             (setq-local flycheck-check-syntax-automatically '(save mode-enabled))
+            (setq-local typescript-indent-level 2)
             (eldoc-mode)
             (company-mode-on)))
 
