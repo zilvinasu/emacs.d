@@ -27,16 +27,17 @@
   (evil-leader/set-leader "<SPC>")
 
   (evil-leader/set-key
-   "b" 'helm-mini
-   "e" 'find-file
-   "gs" 'magit-status
-   "gl" 'magit-log-head
-   "gd" 'magit-diff
-   "j" 'avy-goto-char-timer
-   "ps" 'helm-projectile-ag
-   "pf" 'projectile-find-file
-   "pk" 'projectile-kill-buffers
-   "pp" 'projectile-switch-project)
+    "bb" 'helm-mini
+    "bk" 'kill-this-buffer
+    "e" 'find-file
+    "gs" 'magit-status
+    "gl" 'magit-log-head
+    "gd" 'magit-diff
+    "j" 'avy-goto-char-timer
+    "ps" 'helm-projectile-ag
+    "pf" 'projectile-find-file
+    "pk" 'projectile-kill-buffers
+    "pp" 'projectile-switch-project)
   
   ;; \ is bound to evil-execute-in-emacs-state
   (bind-key (kbd "gd") (kbd "\\ M-.") evil-normal-state-map)
