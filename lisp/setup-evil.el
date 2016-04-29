@@ -35,6 +35,7 @@
     "j" 'avy-goto-char-timer
     "ps" 'helm-projectile-ag
     "pf" 'projectile-find-file
+    "pd" 'projectile-dired
     "pk" 'projectile-kill-buffers
     "pp" 'projectile-switch-project)
   
