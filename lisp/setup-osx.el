@@ -3,7 +3,7 @@
 ;;; OSX specific configs
 ;;; Code:
 (defvar-local osx-frame-font "Input Mono Narrow")
-(defvar-local osx-frame-font-size 12)
+(defvar-local osx-frame-font-size 11)
 
 (when (find-font (font-spec :name osx-frame-font))
   (set-frame-font (format "%s-%d" osx-frame-font osx-frame-font-size)))
