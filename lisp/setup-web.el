@@ -15,7 +15,8 @@
   (setq-local web-mode-markup-indent-offset 2)
   (setq-local web-mode-code-indent-offset 2)
   (setq-local web-mode-css-indent-offset 2)
-  (setq-local web-mode-enable-auto-quoting nil))
+  (setq-local web-mode-enable-auto-quoting nil)
+  (yas-activate-extra-mode 'html-mode))
 
 (add-hook 'web-mode-hook  'my-web-mode-hook)
 
