@@ -49,7 +49,7 @@
   (sp-with-modes sp-lisp-modes
     (sp-local-pair "(" nil :bind "C-("))
   (smartparens-global-mode 1)
-  (smartparens-global-strict-mode 1)
+  (add-hook 'lisp-mode-hook 'smartparens-strict-mode)
   (show-smartparens-global-mode 1))
 
 (provide 'setup-smartparens)
