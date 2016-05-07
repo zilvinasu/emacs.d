@@ -7,6 +7,7 @@
             (tern-mode t)
             (add-to-list 'company-backends 'company-tern)
             (setq-local js-indent-level 2)
+            (setq-local evil-shift-width typescript-indent-level)
             (setq-local indent-line-function 'js-jsx-indent-line)))
 (add-to-list 'auto-mode-alist '("\\.jsx$" . js-mode))
 
@@ -15,6 +16,7 @@
             (tide-setup)
             (setq-local flycheck-check-syntax-automatically '(save mode-enabled))
             (setq-local typescript-indent-level 2)
+            (setq-local evil-shift-width typescript-indent-level)
             (eldoc-mode)
             (company-mode-on)))
 
