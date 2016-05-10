@@ -27,6 +27,7 @@
 
   (evil-leader/set-key
     "e" 'find-file
+    "d" 'dired
     "j" 'avy-goto-char-timer
     "o"  'projectile-find-file
     "bb" 'helm-mini
