@@ -9,6 +9,7 @@
 
 (winner-mode 1)
 (yas-global-mode)
+(global-hl-line-mode)
 
 (provide 'setup-misc)
 ;;; setup-misc.el ends here
