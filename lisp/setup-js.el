@@ -9,7 +9,9 @@
             (setq-local js-indent-level 2)
             (setq-local evil-shift-width typescript-indent-level)
             (setq-local indent-line-function 'js-jsx-indent-line)))
-(add-to-list 'auto-mode-alist '("\\.jsx$" . js-mode))
+
+(add-to-list 'auto-mode-alist '("\\.jsx$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 (add-hook 'typescript-mode-hook
           (lambda ()
