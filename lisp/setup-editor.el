@@ -6,10 +6,12 @@
 ;; Theming
 (load-theme 'leuven t)
 
-(setq rm-blacklist "*")
-(setq rm-whitelist (mapconcat 'identity '("FlyC" "Fly") "\\|"))
-(setq sml/no-confirm-load-theme t)
-(sml/setup)
+(use-package rich-minority
+  :init
+  (setq-default rm-blacklist "*")
+  (setq-default rm-whitelist (mapconcat 'identity '("FlyC" "Fly") "\\|"))
+  :config
+  (rich-minority-mode 1))
 
 ;; Backups
 (setq backup-directory-alist
