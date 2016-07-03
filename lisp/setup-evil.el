@@ -26,16 +26,16 @@
   (evil-set-initial-state 'shell-mode 'insert)
 
   (evil-leader/set-key
+    "bb" 'switch-to-buffer
     "e" 'find-file
     "d" 'dired
     "j" 'avy-goto-char-timer
     "o"  'projectile-find-file
-    "bb" 'helm-mini
     "bk" 'kill-this-buffer
     "gs" 'magit-status
     "gl" 'magit-log-head
     "gd" 'magit-diff
-    "ps" 'helm-projectile-ag
+    "ps" 'projectile-ag
     "pf" 'projectile-find-file
     "pd" 'projectile-dired
     "pk" 'projectile-kill-buffers
