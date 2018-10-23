@@ -8,7 +8,7 @@
   (setq org-replace-disputed-keys t)
   (org-babel-do-load-languages
    'org-babel-load-languages
-   '((sh . t)))
+   '((shell . t)))
   (add-to-list 'auto-mode-alist '("\\.org$" . org-mode)))
 
 (provide 'setup-org)
