@@ -2,6 +2,20 @@
 ;;; Commentary:
 ;;; Globla bindings and rempapings
 ;;; Code:
+
+(defun neotree-project-dir ()
+  "Open NeoTree using the git root."
+  (interactive)
+  (let ((project-dir (projectile-project-root))
+        (file-name (buffer-file-name)))
+    (neotree-toggle)
+    (if project-dir
+        (if (neo-global--window-exists-p)
+            (progn
+              (neotree-dir project-dir)
+              (neotree-find file-name)))
+      (message "Could not find git project root."))))
+
 (windmove-default-keybindings)
 (global-set-key [remap dabbrev-expand] 'hippie-expand)
 (global-unset-key (kbd "C-x c"))
@@ -31,7 +45,7 @@
 (global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
-(global-set-key (kbd "C-x n") 'neotree-toggle)
+(global-set-key (kbd "C-x n") 'neotree-project-dir)
  
 (provide 'setup-kbds)
 ;;; setup-kbds.el ends here
