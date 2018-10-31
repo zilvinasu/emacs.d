@@ -31,6 +31,7 @@
 (global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
+(global-set-key (kbd "C-x n") 'neotree-toggle)
  
 (provide 'setup-kbds)
 ;;; setup-kbds.el ends here

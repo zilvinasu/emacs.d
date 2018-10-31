@@ -11,5 +11,7 @@
 (yas-global-mode)
 (global-hl-line-mode)
 
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+
 (provide 'setup-misc)
 ;;; setup-misc.el ends here
