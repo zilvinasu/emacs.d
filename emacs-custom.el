@@ -5,6 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(fringe-mode (quote (1 . 1)) nil (fringe))
  '(neo-autorefresh t)
+ '(neo-force-change-root t)
  '(neo-theme (quote icons))
  '(neo-window-fixed-size nil)
  '(package-selected-packages
